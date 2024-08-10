@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;900&display=swap");
+.brd-cap {
+  float: left;
+  font-size: 20vmin;
+  font-weight: 900;
+  color: #e61e82;
+  width: 0.75em;
+  text-shadow: 0.02em 0.04em 0 #F9F6EF;
+  position: relative;
+}
+.brd-cap:before {
+  display: inline-grid;
+  place-content: center;
+  content: attr(shape);
+  position: absolute;
+  width: 1ch;
+  height: 1em;
+  top: -0.3em;
+  left: 0.04em;
+  color: transparent;
+  text-shadow: none;
+  -webkit-text-stroke: 1px rgba(255, 56, 156, 0.5);
+  z-index: -1;
+  background-position: -1em;
+  background-size: 6px 6px;
+  background-image: repeating-linear-gradient(45deg, #ff389c 0, #ff389c 25%, #F9F6EF 0, #F9F6EF 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+p {
+  line-height: 1.4lh;
+}
+p span {
+  font-weight: 100;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  background-color: #F9F6EF;
+  color: #1f2020;
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-content: center;
+}
